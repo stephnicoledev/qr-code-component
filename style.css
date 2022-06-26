@@ -3,51 +3,57 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: hsl(212, 45%, 89%);
-  display: flex;
-  height: 100vh;
-  font-family: "Outfit", sans-serif;
-  font-size: 0.938rem;
+:root {
+  /* color palette */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --dark-gray: hsl(220, 15%, 55%);
+  --blue: hsl(218, 44%, 22%);
 }
 
-.card-component {
-  background-color: hsl(0, 0%, 100%);
-  width: 50%;
-  max-width: 500px;
+body {
+  background-color: var(--light-gray);
+  font-family: "Outfit", sans-serif;
+  font-size: 0.938rem;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.qr-component {
+  background-color: var(--white);
+  padding: 1rem;
+  max-width: 20em;
+  max-height: min-content;
+  border-radius: 10px;
   margin: auto;
+}
+
+.qr-img {
+  display: block;
+  margin: 0 auto 1em;
+  width: 18em;
   border-radius: 10px;
 }
 
-.qr-code {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 50px;
-  padding: 2rem;
-}
-
-.card-text {
+.title {
+  font-size: 1.375rem;
+  color: var(--dark-blue);
+  margin-bottom: 1em;
   text-align: center;
-  color: hsl(220, 15%, 55%);
-  padding: 0 1.5rem 1.5rem;
 }
 
-.card-title {
-  font-size: 1.4rem;
-  color: hsl(218, 44%, 22%);
-  margin-top: 0;
-}
-
-@media (min-width: 748px) {
-  .card-text {
-    padding: 0 2rem 2rem;
-  }
-
-  .card-title {
-    font-size: 2rem;
-  }
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--grayish-blue);
+  padding: 0 1em;
+  margin-bottom: 1.5em;
+  text-align: center;
 }
