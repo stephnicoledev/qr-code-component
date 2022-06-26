@@ -1,6 +1,6 @@
 ## QR Code Component
 
-![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the QR code component coding challenge](./design/desktop-design.jpg)
 
 ## Built with:
 
